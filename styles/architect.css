@@ -8,7 +8,14 @@
     font-family: 'Work Sans', sans-serif;
 }
 .btn-primary{
-    
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border: 0;
+    cursor: pointer;
 }
 
 /* header styles */
@@ -19,6 +26,13 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    color: #13131;
+    font-weight: 700;
+    font-size: 3rem;
+    
 }
 nav > ul{
     display: flex;
@@ -50,4 +64,29 @@ nav li a{
 .banner-description{
     color: #727272;
 
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media query */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
